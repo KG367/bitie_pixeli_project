@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ArV+cnZTir3vGvqTKF7VVZi6pyl+jBg9M6X7+kzyaF0=",
+  "Hash": "qvVg4E9v4heEzdosnOalrHvwswlNSDc0IFCcxH2qE64=",
   "Source": "MyWasmApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "knejphtpcd",
-      "Integrity": "EILD2hjHEzW3vdB9EKHYjzUBhIQx9ixmjX0HmVbJyL4=",
+      "Fingerprint": "gyujohef9j",
+      "Integrity": "eL83e3uq8GR5K5oo7em//bXvovtFsiLoxtDOj6ujLl8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/blazor.boot.json"
@@ -850,8 +850,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "s8jvxo6ljb",
-      "Integrity": "LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M=",
+      "Fingerprint": "ij6rxtrd97",
+      "Integrity": "ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/MyWasmApp.pdb"
@@ -871,8 +871,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "for0zmlsf9",
-      "Integrity": "H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM=",
+      "Fingerprint": "s9jp1jeyxe",
+      "Integrity": "0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/webcil/MyWasmApp.wasm"
@@ -5855,7 +5855,7 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Security.wasm"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-knejphtpcd.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-gyujohef9j.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/",
@@ -5869,8 +5869,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r3aw0v5g0e",
-      "Integrity": "2dgHJluK5JLJ5zNPt7A69e10WDvDap+e3qjrNsgh6ug=",
+      "Fingerprint": "v7yl3dgih3",
+      "Integrity": "e1dVW6NJBItGUg2RYbmBHT1fTnC+ew8bqBCcNWNxf/E=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json"
@@ -7031,12 +7031,12 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-s8jvxo6ljb.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=s8jvxo6ljb}]!.pdb.gz",
+      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=ij6rxtrd97}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7045,8 +7045,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q702trk2fl",
-      "Integrity": "akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk=",
+      "Fingerprint": "o79y2tvh9r",
+      "Integrity": "JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb"
@@ -8585,12 +8585,12 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Security.Principal.wasm"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-for0zmlsf9.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=for0zmlsf9}]!.wasm.gz",
+      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=s9jp1jeyxe}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8599,8 +8599,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wt48lucegm",
-      "Integrity": "dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ=",
+      "Fingerprint": "8ynj7cj8f6",
+      "Integrity": "AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm"
@@ -10705,11 +10705,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EILD2hjHEzW3vdB9EKHYjzUBhIQx9ixmjX0HmVbJyL4=\""
+          "Value": "\"eL83e3uq8GR5K5oo7em//bXvovtFsiLoxtDOj6ujLl8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:43:32 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10719,18 +10719,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EILD2hjHEzW3vdB9EKHYjzUBhIQx9ixmjX0HmVbJyL4="
+          "Value": "sha256-eL83e3uq8GR5K5oo7em//bXvovtFsiLoxtDOj6ujLl8="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-knejphtpcd.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-gyujohef9j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081400081"
+          "Quality": "0.000081393456"
         }
       ],
       "ResponseHeaders": [
@@ -10740,15 +10740,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12284"
+          "Value": "12285"
         },
         {
           "Name": "ETag",
-          "Value": "\"2dgHJluK5JLJ5zNPt7A69e10WDvDap+e3qjrNsgh6ug=\""
+          "Value": "\"e1dVW6NJBItGUg2RYbmBHT1fTnC+ew8bqBCcNWNxf/E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:15:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10768,19 +10768,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EILD2hjHEzW3vdB9EKHYjzUBhIQx9ixmjX0HmVbJyL4=\""
+          "Value": "W/\"eL83e3uq8GR5K5oo7em//bXvovtFsiLoxtDOj6ujLl8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EILD2hjHEzW3vdB9EKHYjzUBhIQx9ixmjX0HmVbJyL4="
+          "Value": "sha256-eL83e3uq8GR5K5oo7em//bXvovtFsiLoxtDOj6ujLl8="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-knejphtpcd.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-gyujohef9j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10789,7 +10789,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12284"
+          "Value": "12285"
         },
         {
           "Name": "Content-Type",
@@ -10797,11 +10797,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2dgHJluK5JLJ5zNPt7A69e10WDvDap+e3qjrNsgh6ug=\""
+          "Value": "\"e1dVW6NJBItGUg2RYbmBHT1fTnC+ew8bqBCcNWNxf/E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:15:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10819,7 +10819,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2dgHJluK5JLJ5zNPt7A69e10WDvDap+e3qjrNsgh6ug="
+          "Value": "sha256-e1dVW6NJBItGUg2RYbmBHT1fTnC+ew8bqBCcNWNxf/E="
         }
       ]
     },
@@ -21987,168 +21987,7 @@
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.for0zmlsf9.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17685"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "for0zmlsf9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MyWasmApp.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.for0zmlsf9.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-for0zmlsf9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000128518185"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7780"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "for0zmlsf9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MyWasmApp.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.for0zmlsf9.wasm.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-for0zmlsf9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7780"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "for0zmlsf9"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MyWasmApp.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.pdb",
+      "Route": "_framework/MyWasmApp.ij6rxtrd97.pdb",
       "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22158,7 +21997,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23520"
+          "Value": "24560"
         },
         {
           "Name": "Content-Type",
@@ -22166,148 +22005,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M=\""
+          "Value": "\"ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.pdb",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-s8jvxo6ljb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000058671673"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17043"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.pdb.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-s8jvxo6ljb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17043"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.s8jvxo6ljb.pdb",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23520"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:58 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22317,7 +22019,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s8jvxo6ljb"
+          "Value": "ij6rxtrd97"
         },
         {
           "Name": "label",
@@ -22325,18 +22027,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M="
+          "Value": "sha256-ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.s8jvxo6ljb.pdb",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-s8jvxo6ljb.gz",
+      "Route": "_framework/MyWasmApp.ij6rxtrd97.pdb",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000058671673"
+          "Quality": "0.000056548292"
         }
       ],
       "ResponseHeaders": [
@@ -22346,15 +22048,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17043"
+          "Value": "17683"
         },
         {
           "Name": "ETag",
-          "Value": "\"akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk=\""
+          "Value": "\"JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22374,13 +22076,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M=\""
+          "Value": "W/\"ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s8jvxo6ljb"
+          "Value": "ij6rxtrd97"
         },
         {
           "Name": "label",
@@ -22388,13 +22090,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LDRoUIU8UO9hRzjtO6S5K3VFfRx1ddy4IAyG6KPPr9M="
+          "Value": "sha256-ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.s8jvxo6ljb.pdb.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-s8jvxo6ljb.gz",
+      "Route": "_framework/MyWasmApp.ij6rxtrd97.pdb.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22403,7 +22105,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17043"
+          "Value": "17683"
         },
         {
           "Name": "Content-Type",
@@ -22411,11 +22113,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk=\""
+          "Value": "\"JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22433,7 +22135,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "s8jvxo6ljb"
+          "Value": "ij6rxtrd97"
         },
         {
           "Name": "label",
@@ -22441,7 +22143,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-akmLpMlof9aPdq/9OZ+6ZnSKaLS7Pc1rfHBrIgMMhPk="
+          "Value": "sha256-JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.pdb",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.pdb",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000056548292"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17683"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.pdb.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17683"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JGk6sfAuoFZ/pYOUtd4nE89sEhFzc/jgVQESiRnSV0g="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.s9jp1jeyxe.wasm",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9jp1jeyxe"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MyWasmApp.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.s9jp1jeyxe.wasm",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000109878035"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9100"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9jp1jeyxe"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MyWasmApp.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.s9jp1jeyxe.wasm.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9jp1jeyxe"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MyWasmApp.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M="
         }
       ]
     },
@@ -22456,7 +22456,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17685"
+          "Value": "20757"
         },
         {
           "Name": "Content-Type",
@@ -22464,11 +22464,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM=\""
+          "Value": "\"0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:58 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22478,18 +22478,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM="
+          "Value": "sha256-0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g="
         }
       ]
     },
     {
       "Route": "_framework/MyWasmApp.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-for0zmlsf9.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000128518185"
+          "Quality": "0.000109878035"
         }
       ],
       "ResponseHeaders": [
@@ -22499,15 +22499,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7780"
+          "Value": "9100"
         },
         {
           "Name": "ETag",
-          "Value": "\"dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ=\""
+          "Value": "\"AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22527,19 +22527,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM=\""
+          "Value": "W/\"0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-H/eJB+xruzskj8N2LWzFx+St3zyUs1O3cEPs9BAQhPM="
+          "Value": "sha256-0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g="
         }
       ]
     },
     {
       "Route": "_framework/MyWasmApp.wasm.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-for0zmlsf9.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22548,7 +22548,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7780"
+          "Value": "9100"
         },
         {
           "Name": "Content-Type",
@@ -22556,11 +22556,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ=\""
+          "Value": "\"AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Oct 2025 12:35:59 GMT"
+          "Value": "Tue, 21 Oct 2025 20:45:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22578,7 +22578,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dHez5zQBGLI1Ah6L68NgTcOhpWOsTCrSz6dZn2jt+lQ="
+          "Value": "sha256-AEeYLdxe+dNtUyejijFEBqs5ysxG6pasC5uxzg0bM4M="
         }
       ]
     },
