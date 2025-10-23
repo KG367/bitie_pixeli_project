@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyWasmApp",
   "resources": {
-    "hash": "sha256-qprKKHH3DDJDBPwEmu1vTx38nXGF2pQOM2Q2wLEEKcg=",
+    "hash": "sha256-tcFf+IkB/Zi/0NCsPeunDYO8EdsB/ZorsLXXuSfugb4=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.z6jo10m0rd.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.65wbz7t8mt.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "MyWasmApp.s9jp1jeyxe.wasm": "MyWasmApp.wasm",
-      "MyWasmApp.ij6rxtrd97.pdb": "MyWasmApp.pdb"
+      "MyWasmApp.gffgmobbo5.wasm": "MyWasmApp.wasm",
+      "MyWasmApp.w00ovupw5g.pdb": "MyWasmApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.l4ptthxatg.js": "sha256-ddUN4+taa/Qv7Mr8mLpunJO+0Xw3ViOqBvedhe57/hA="
@@ -412,10 +412,10 @@
       "WindowsBase.ahs9krftg4.wasm": "sha256-bgi2FHdT0ABsUP1yKQQ2AP8qfo1V/bS/4cJFE4OUHX8=",
       "mscorlib.k5iaovx9v7.wasm": "sha256-mEFLDERlY1HMNQHzh68xOPawXvI48O1fHW9PbfXugb4=",
       "netstandard.6sr1qvn64m.wasm": "sha256-Gpf+qEqCYaCB6zqI5sNPIurnfpwRtfcWksgf3CW6mHE=",
-      "MyWasmApp.s9jp1jeyxe.wasm": "sha256-0FqG10/dgGQjrKrUO69unkeUSby1QG1jYiBVXH3ad4g="
+      "MyWasmApp.gffgmobbo5.wasm": "sha256-HFitY1cphm5FaDv3l9Ilr5s7xV48RKFdSVlO93rF8TU="
     },
     "pdb": {
-      "MyWasmApp.ij6rxtrd97.pdb": "sha256-ImGVfUfBVtGcpjhVw2mudi19Fds/e1gJyooZ9tn9M9I="
+      "MyWasmApp.w00ovupw5g.pdb": "sha256-IF2gmkT/WogfvzCyrQvke/VjgRD55dUpqxI1viNVyy4="
     }
   },
   "cacheBootResources": true,

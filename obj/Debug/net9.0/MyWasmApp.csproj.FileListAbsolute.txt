@@ -37,6 +37,8 @@
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Win32.Primitives.y3qy6ezutd.wasm
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Win32.Registry.79bs7l5oe6.wasm
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/mscorlib.k5iaovx9v7.wasm
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.w00ovupw5g.pdb
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.gffgmobbo5.wasm
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/netstandard.6sr1qvn64m.wasm
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.AppContext.oz2126q8p4.wasm
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Buffers.6p4t8ehf1e.wasm
@@ -297,6 +299,7 @@
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.map.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/Microsoft.JSInterop.9ydsnriizw.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Private.DataContractSerialization.u0i8l6wxw8.wasm.gz
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.w00ovupw5g.pdb.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Net.NetworkInformation.z1n88cru7n.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Net.Http.Json.24ue7cxcfm.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.d2w7colv7e.wasm.gz
@@ -362,6 +365,7 @@
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Win32.Registry.79bs7l5oe6.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Data.DataSetExtensions.nsw82s8i30.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Security.Principal.77yri8eg3s.wasm.gz
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.gffgmobbo5.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Diagnostics.Debug.jcthdeoxhj.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Threading.6ixcigppyn.wasm.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebClient.6srus0w9av.wasm.gz
@@ -1061,6 +1065,9 @@
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/rgvb3qln05-tjcz0u77k5.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/oodbmxuzu9-tptq2av103.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/wagic6k5mi-lfu7j35m59.gz
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-gffgmobbo5.gz
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-w00ovupw5g.gz
+/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-obkti3lrr5.gz
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/staticwebassets.build.json
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/staticwebassets.development.json
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -1075,10 +1082,3 @@
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/refint/MyWasmApp.dll
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/MyWasmApp.pdb
 /home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/ref/MyWasmApp.dll
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.ij6rxtrd97.pdb
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.s9jp1jeyxe.wasm
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.ij6rxtrd97.pdb.gz
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.s9jp1jeyxe.wasm.gz
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/t2qwrl8i0e-s9jp1jeyxe.gz
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/j4vc67eb32-ij6rxtrd97.gz
-/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/Debug/net9.0/compressed/asa5tjt0zs-gyujohef9j.gz

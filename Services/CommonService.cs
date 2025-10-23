@@ -2,7 +2,7 @@
 using Microsoft.JSInterop;
 using System.Threading.Tasks;
 
-namespace Service
+namespace Service // пока что тупо прослойка для JS, мб потом что-то более нужное добавим
 {
     public class CommonService
     {
