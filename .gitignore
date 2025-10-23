@@ -1,2 +1,6 @@
 bin/
 obj/
+
+# for mac users
+.DS_Store?
+*.DS_Store
