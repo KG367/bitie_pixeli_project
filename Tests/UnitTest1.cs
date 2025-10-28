@@ -1,5 +1,6 @@
 ﻿using Xunit;
-using Server;  // Твое пространство имен!
+using Server;
+using Service;
 
 namespace Tests
 {
@@ -138,14 +139,20 @@ namespace Tests
         {
             // Arrange
             var booking = new Booking(1, "Иван", "+79991112233", DateTime.Now, DateTime.Now.AddHours(2), "Коммент", 1);
-            
+
             // Act
             bool result = booking.TryModify(
                 (BookingField.ClientId, "-5") // Невалидный ID
             );
-            
+
             // Assert
             Assert.False(result);
+        }
+
+        [Fact]
+        public void Try_Connect_DB()
+        {
+            var serv = new PostgresService();
         }
     }
 }
