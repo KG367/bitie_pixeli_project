@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/MyWasmApp.csproj": {}
+    "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/MyWasmApp.csproj": {}
   },
   "projects": {
-    "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/MyWasmApp.csproj": {
+    "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/MyWasmApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/MyWasmApp.csproj",
+        "projectUniqueName": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/MyWasmApp.csproj",
         "projectName": "MyWasmApp",
-        "projectPath": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/MyWasmApp.csproj",
+        "projectPath": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/MyWasmApp.csproj",
         "packagesPath": "/home/undeadguy/.nuget/packages/",
-        "outputPath": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/obj/",
+        "outputPath": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/undeadguy/.nuget/NuGet/NuGet.Config"
@@ -65,6 +65,10 @@
               "target": "Package",
               "version": "[9.0.10, )",
               "autoReferenced": true
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

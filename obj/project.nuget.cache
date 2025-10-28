@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UphhMNsT4J8=",
+  "dgSpecHash": "25AlFZkApGw=",
   "success": true,
-  "projectFilePath": "/home/undeadguy/ПОЛИГОН/C#/MyWasmApp/MyWasmApp.csproj",
+  "projectFilePath": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/MyWasmApp.csproj",
   "expectedPackageFiles": [
     "/home/undeadguy/.nuget/packages/microsoft.aspnetcore.authorization/9.0.9/microsoft.aspnetcore.authorization.9.0.9.nupkg.sha512",
     "/home/undeadguy/.nuget/packages/microsoft.aspnetcore.components/9.0.9/microsoft.aspnetcore.components.9.0.9.nupkg.sha512",
@@ -30,8 +30,9 @@
     "/home/undeadguy/.nuget/packages/microsoft.jsinterop.webassembly/9.0.9/microsoft.jsinterop.webassembly.9.0.9.nupkg.sha512",
     "/home/undeadguy/.nuget/packages/microsoft.net.illink.tasks/9.0.9/microsoft.net.illink.tasks.9.0.9.nupkg.sha512",
     "/home/undeadguy/.nuget/packages/microsoft.net.sdk.webassembly.pack/9.0.10/microsoft.net.sdk.webassembly.pack.9.0.10.nupkg.sha512",
-    "/home/undeadguy/.nuget/packages/microsoft.netcore.app.ref/9.0.10/microsoft.netcore.app.ref.9.0.10.nupkg.sha512",
-    "/home/undeadguy/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+    "/home/undeadguy/.nuget/packages/npgsql/9.0.4/npgsql.9.0.4.nupkg.sha512",
+    "/home/undeadguy/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512",
+    "/home/undeadguy/.nuget/packages/microsoft.netcore.app.ref/9.0.10/microsoft.netcore.app.ref.9.0.10.nupkg.sha512"
   ],
   "logs": []
 }
