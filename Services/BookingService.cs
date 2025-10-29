@@ -1,74 +1,9 @@
 using System.Numerics;
+using Service;
 
-namespace Server // мой сервис с реализацией системы брони. Пока что сырой и не обкатанный, но компилируется!
+namespace BookingSysem // мой сервис с реализацией системы брони. Пока что сырой и не обкатанный, но компилируется!
 {
 
-    public enum BookingField
-    {
-        ClientId,
-        ClientName,
-        PhoneNumber,
-        Comment,
-    }
-    public struct Booking
-    {
-        public int ClientId;
-        public string ClientName;
-        public string PhoneNumber;
-        public DateTime StartTime;
-        public DateTime EndTime;
-        public string Comment;
-        public int AssignedTableId;
-
-        public Booking(int clientId, string clientName, string phoneNumber, DateTime startTime, DateTime endTime, string comment, int assignedTableId)
-        {
-            ClientId = clientId;
-            ClientName = clientName;
-            PhoneNumber = phoneNumber;
-            StartTime = startTime;
-            EndTime = endTime;
-            Comment = comment;
-            AssignedTableId = assignedTableId;
-        }
-
-        public override string ToString()
-        {
-            return $"Клиент: {this.ClientId}\nИмя: {this.ClientName}\nТелефон: {this.PhoneNumber}\nНачало: {this.StartTime}\nКонец: {this.EndTime}\nКомментарий: {this.Comment}\n";
-        } 
-
-        public bool TryModify(params (BookingField, string)[] fields)
-        {
-            foreach ((var field, var value) in fields)
-            {
-                switch (field)
-                {
-                    case BookingField.ClientId:
-                        int clearId = 0;
-                        if (int.TryParse(value, out clearId) && clearId >= 0)
-                        {
-                            this.ClientId = clearId;
-                            break;
-                        }
-                        return false;
-
-                    case BookingField.ClientName:
-                        this.ClientName = value;
-                        break;
-
-                    case BookingField.PhoneNumber:
-                        this.PhoneNumber = value;
-                        break;
-
-                    case BookingField.Comment:
-                        this.Comment = value;
-                        break;
-
-                }
-
-            }
-            return true;
-        }
-    }
 
     public class BookingService
     {

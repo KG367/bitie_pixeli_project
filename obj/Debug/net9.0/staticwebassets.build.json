@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QnREHQvn4u81LRnok5UNEyjsHNh1oHZ1VrOsPzcSNKE=",
+  "Hash": "ct1VQOuapeav7DGAjMRfImn7P2+dtJaAf3uL17YYpzM=",
   "Source": "MyWasmApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "tnv82ukb4y",
-      "Integrity": "ScwOiRq/V5sqcutgkfRNgkwJPQJHQSQ4pOH5vGNYd88=",
+      "Fingerprint": "evekhugszj",
+      "Integrity": "SnHQf306qkMp2cAaU2IyCjbPpKBu7TdILr2y4Khu/0o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/blazor.boot.json"
@@ -850,8 +850,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "cu60jugcfn",
-      "Integrity": "pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4=",
+      "Fingerprint": "o4cdt355t7",
+      "Integrity": "qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/MyWasmApp.pdb"
@@ -871,8 +871,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "qllafcdipk",
-      "Integrity": "IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg=",
+      "Fingerprint": "wjjxrzro9p",
+      "Integrity": "PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/webcil/MyWasmApp.wasm"
@@ -5876,7 +5876,7 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/System.Security.wasm"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-tnv82ukb4y.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-evekhugszj.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/",
@@ -5890,8 +5890,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "igk0s0inei",
-      "Integrity": "bhx1h5NydJ2+DcfqTN4znX+8F6bY5B0q0suXlY0/NMI=",
+      "Fingerprint": "dj3y1ide1q",
+      "Integrity": "ab8lAAnDdOVtXwNrdtwHyv+tHVp5AibbYnTk37rY7D0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json"
@@ -7052,12 +7052,12 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=cu60jugcfn}]!.pdb.gz",
+      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=o4cdt355t7}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7066,8 +7066,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fvuxa0ovir",
-      "Integrity": "dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA=",
+      "Fingerprint": "124x5w1gjv",
+      "Integrity": "N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb"
@@ -8627,12 +8627,12 @@
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/System.Security.Principal.wasm"
     },
     {
-      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz",
+      "Identity": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz",
       "SourceId": "MyWasmApp",
       "SourceType": "Computed",
       "ContentRoot": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=qllafcdipk}]!.wasm.gz",
+      "RelativePath": "_framework/MyWasmApp#[.{fingerprint=wjjxrzro9p}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8641,8 +8641,8 @@
       "RelatedAsset": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "soysqqgvkx",
-      "Integrity": "nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE=",
+      "Fingerprint": "krbr1sbgkh",
+      "Integrity": "ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm"
@@ -10747,11 +10747,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ScwOiRq/V5sqcutgkfRNgkwJPQJHQSQ4pOH5vGNYd88=\""
+          "Value": "\"SnHQf306qkMp2cAaU2IyCjbPpKBu7TdILr2y4Khu/0o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:12:00 GMT"
+          "Value": "Wed, 29 Oct 2025 14:18:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10761,18 +10761,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ScwOiRq/V5sqcutgkfRNgkwJPQJHQSQ4pOH5vGNYd88="
+          "Value": "sha256-SnHQf306qkMp2cAaU2IyCjbPpKBu7TdILr2y4Khu/0o="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-tnv82ukb4y.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-evekhugszj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080991334"
+          "Quality": "0.000080958549"
         }
       ],
       "ResponseHeaders": [
@@ -10782,15 +10782,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12346"
+          "Value": "12351"
         },
         {
           "Name": "ETag",
-          "Value": "\"bhx1h5NydJ2+DcfqTN4znX+8F6bY5B0q0suXlY0/NMI=\""
+          "Value": "\"ab8lAAnDdOVtXwNrdtwHyv+tHVp5AibbYnTk37rY7D0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10810,19 +10810,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ScwOiRq/V5sqcutgkfRNgkwJPQJHQSQ4pOH5vGNYd88=\""
+          "Value": "W/\"SnHQf306qkMp2cAaU2IyCjbPpKBu7TdILr2y4Khu/0o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ScwOiRq/V5sqcutgkfRNgkwJPQJHQSQ4pOH5vGNYd88="
+          "Value": "sha256-SnHQf306qkMp2cAaU2IyCjbPpKBu7TdILr2y4Khu/0o="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-tnv82ukb4y.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-evekhugszj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10831,7 +10831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12346"
+          "Value": "12351"
         },
         {
           "Name": "Content-Type",
@@ -10839,11 +10839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bhx1h5NydJ2+DcfqTN4znX+8F6bY5B0q0suXlY0/NMI=\""
+          "Value": "\"ab8lAAnDdOVtXwNrdtwHyv+tHVp5AibbYnTk37rY7D0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10861,7 +10861,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bhx1h5NydJ2+DcfqTN4znX+8F6bY5B0q0suXlY0/NMI="
+          "Value": "sha256-ab8lAAnDdOVtXwNrdtwHyv+tHVp5AibbYnTk37rY7D0="
         }
       ]
     },
@@ -22029,7 +22029,7 @@
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.cu60jugcfn.pdb",
+      "Route": "_framework/MyWasmApp.o4cdt355t7.pdb",
       "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22039,7 +22039,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28780"
+          "Value": "31644"
         },
         {
           "Name": "Content-Type",
@@ -22047,11 +22047,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4=\""
+          "Value": "\"qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:38 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22061,7 +22061,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cu60jugcfn"
+          "Value": "o4cdt355t7"
         },
         {
           "Name": "label",
@@ -22069,18 +22069,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4="
+          "Value": "sha256-qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.cu60jugcfn.pdb",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz",
+      "Route": "_framework/MyWasmApp.o4cdt355t7.pdb",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000049539285"
+          "Quality": "0.000046654847"
         }
       ],
       "ResponseHeaders": [
@@ -22090,15 +22090,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20185"
+          "Value": "21433"
         },
         {
           "Name": "ETag",
-          "Value": "\"dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA=\""
+          "Value": "\"N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22118,13 +22118,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4=\""
+          "Value": "W/\"qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cu60jugcfn"
+          "Value": "o4cdt355t7"
         },
         {
           "Name": "label",
@@ -22132,13 +22132,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4="
+          "Value": "sha256-qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.cu60jugcfn.pdb.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz",
+      "Route": "_framework/MyWasmApp.o4cdt355t7.pdb.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22147,7 +22147,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20185"
+          "Value": "21433"
         },
         {
           "Name": "Content-Type",
@@ -22155,11 +22155,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA=\""
+          "Value": "\"N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22177,7 +22177,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cu60jugcfn"
+          "Value": "o4cdt355t7"
         },
         {
           "Name": "label",
@@ -22185,7 +22185,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA="
+          "Value": "sha256-N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY="
         }
       ]
     },
@@ -22200,7 +22200,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "28780"
+          "Value": "31644"
         },
         {
           "Name": "Content-Type",
@@ -22208,11 +22208,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4=\""
+          "Value": "\"qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:38 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22222,18 +22222,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4="
+          "Value": "sha256-qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE="
         }
       ]
     },
     {
       "Route": "_framework/MyWasmApp.pdb",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000049539285"
+          "Quality": "0.000046654847"
         }
       ],
       "ResponseHeaders": [
@@ -22243,15 +22243,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20185"
+          "Value": "21433"
         },
         {
           "Name": "ETag",
-          "Value": "\"dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA=\""
+          "Value": "\"N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22271,19 +22271,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4=\""
+          "Value": "W/\"qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pE1NcR+UlGZARe4oHppgLO8K2oQKvXexGFaI3OQoFp4="
+          "Value": "sha256-qDcsLwOqx2YWwJD0TSsfbhWQONkUoiwwg5D+vNaPIuE="
         }
       ]
     },
     {
       "Route": "_framework/MyWasmApp.pdb.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22292,7 +22292,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20185"
+          "Value": "21433"
         },
         {
           "Name": "Content-Type",
@@ -22300,11 +22300,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA=\""
+          "Value": "\"N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:11:39 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22322,12 +22322,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dVtGXnZjZevhATcP/4AZtHNVQBzj4qIukU0dnVzipcA="
+          "Value": "sha256-N7iRTtkq3YGWlUWfDVFhxt8Oy1eCFkx+/Yn0MC7kPtY="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.qllafcdipk.wasm",
+      "Route": "_framework/MyWasmApp.wasm",
       "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22337,7 +22337,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29973"
+          "Value": "36629"
         },
         {
           "Name": "Content-Type",
@@ -22345,40 +22345,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg=\""
+          "Value": "\"PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:25 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "qllafcdipk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MyWasmApp.wasm"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg="
+          "Value": "sha256-PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.qllafcdipk.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz",
+      "Route": "_framework/MyWasmApp.wasm",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000074178473"
+          "Quality": "0.000061293288"
         }
       ],
       "ResponseHeaders": [
@@ -22388,19 +22380,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13480"
+          "Value": "16314"
         },
         {
           "Name": "ETag",
-          "Value": "\"nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE=\""
+          "Value": "\"ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:26 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -22416,27 +22408,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg=\""
+          "Value": "W/\"PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "qllafcdipk"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/MyWasmApp.wasm"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg="
+          "Value": "sha256-PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM="
         }
       ]
     },
     {
-      "Route": "_framework/MyWasmApp.qllafcdipk.wasm.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz",
+      "Route": "_framework/MyWasmApp.wasm.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22445,7 +22429,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13480"
+          "Value": "16314"
         },
         {
           "Name": "Content-Type",
@@ -22453,11 +22437,164 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE=\""
+          "Value": "\"ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:26 GMT"
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.wjjxrzro9p.wasm",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wjjxrzro9p"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MyWasmApp.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.wjjxrzro9p.wasm",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000061293288"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16314"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wjjxrzro9p"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MyWasmApp.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPgp6k9fqUAvt9CCOHtqJrVKmVZHTtD0WWb6IKj3MEM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MyWasmApp.wjjxrzro9p.wasm.gz",
+      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Oct 2025 14:15:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22475,7 +22612,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qllafcdipk"
+          "Value": "wjjxrzro9p"
         },
         {
           "Name": "label",
@@ -22483,144 +22620,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29973"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.wasm",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000074178473"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13480"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IgULn58OFJ/+0Mm8Y48RtFRHjWFO7Ij20TnEM/7f5Fg="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/MyWasmApp.wasm.gz",
-      "AssetFile": "/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13480"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Oct 2025 20:06:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-nGAm8EhAM/R+vTTI52/NLoM6IhtQx3xwKw//B6Wa+XE="
+          "Value": "sha256-ULW4BJPhCPE2a3+R8D/q91ap/mxZV0dxudMlzGIedyA="
         }
       ]
     },

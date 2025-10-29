@@ -3,10 +3,54 @@ using Microsoft.JSInterop;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Npgsql;
+using System.Data;
 
 
-namespace Service // пока что тупо прослойка для JS, мб потом что-то более нужное добавим
+namespace Service //базовая прослойка JS плюс БД
 {
+
+
+    public class Parcer
+    {
+        public static List<string> ParceArgs(string str)
+        {
+            List<string> args = new List<string>();
+            string buff = "";
+            bool isArg = false;
+
+            foreach (char c in str)
+            {
+                if (isArg)
+                {
+                    if (c == ' ')
+                    {
+                        args.Add(buff);
+                        buff = "@";
+                        isArg = false;
+                    }
+                    else
+                    {
+                        buff += c;
+                    }
+                }
+                else
+                {
+                    if (c == '@')
+                    {
+                        isArg = true;
+                        buff = "@";
+                    }
+                }
+            }
+
+            if (buff != "@" && buff != "")
+            {
+                args.Add(buff);
+            }
+
+            return args;
+        }
+    }
     public class JSService
     {
 
@@ -26,6 +70,122 @@ namespace Service // пока что тупо прослойка для JS, мб
 
         public async Task CallJSFunc(string functionName, params object[] args)
             => await _js.InvokeVoidAsync(functionName, args);
+    }
+
+
+
+
+    public enum BookingField
+    {
+        UserId,
+        ClientName,
+        PhoneNumber,
+        Comment,
+    }
+    public class Booking
+    {
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string ClientName { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public string Comment { get; set; }
+        public int AssignedTableId { get; set; }
+
+
+        public Booking(int userId, string clientName, string phoneNumber, DateTime startTime, DateTime endTime, string comment, int assignedTableId)
+        {
+            UserId = userId;
+            ClientName = clientName;
+            PhoneNumber = phoneNumber;
+            StartTime = startTime;
+            EndTime = endTime;
+            Comment = comment;
+            AssignedTableId = assignedTableId;
+        }
+
+        public override string ToString()
+        {
+            return $"Клиент: {this.UserId}\nИмя: {this.ClientName}\nТелефон: {this.PhoneNumber}\nНачало: {this.StartTime}\nКонец: {this.EndTime}\nКомментарий: {this.Comment}\n";
+        }
+
+        public bool TryModify(params (BookingField, string)[] fields)
+        {
+            foreach ((var field, var value) in fields)
+            {
+                switch (field)
+                {
+                    case BookingField.UserId:
+                        int clearId = 0;
+                        if (int.TryParse(value, out clearId) && clearId >= 0)
+                        {
+                            this.UserId = clearId;
+                            break;
+                        }
+                        return false;
+
+                    case BookingField.ClientName:
+                        this.ClientName = value;
+                        break;
+
+                    case BookingField.PhoneNumber:
+                        this.PhoneNumber = value;
+                        break;
+
+                    case BookingField.Comment:
+                        this.Comment = value;
+                        break;
+
+                }
+
+            }
+            return true;
+        }
+    }
+
+
+    public class Tables
+    {
+        public int Id { get; set; }
+        public string Location { get; set; }
+        public int Seats { get; set; }
+    }
+
+    public class Orders
+    {
+        public int Id { get; set; }
+        public int TableId { get; set; }
+        public List<int> Dishes { get; set; }
+        public string Comment { get; set; }
+        public DateTime OrderTime { get; set; }
+        public int WaiterId { get; set; }
+        public DateTime CloseTime { get; set; }
+        public decimal TotalPrice { get; set; }
+    }
+
+    public class Dishes
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Ingredients { get; set; }
+        public string Weight { get; set; }
+        public List<int> Categories { get; set; }
+        public List<int> Tags { get; set; }
+        public int CookingTime { get; set; }
+        public decimal Cost { get; set; }
+    }
+
+    public class Categories
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class Tags
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
     public class PostgresService : IDisposable
@@ -61,22 +221,86 @@ namespace Service // пока что тупо прослойка для JS, мб
             }
         }
 
+        public List<List<object>> ExecSQL(string command, params object[] args)
+        {
+            List<List<object>> result = new List<List<object>>();
+
+            try
+            {
+                using var projectCommand = new NpgsqlCommand(command, _connection);
+
+                if (args.Length != 0)
+                {
+                    List<string> parcedArgs = Parcer.ParceArgs(command); 
+
+                    if (parcedArgs.Count != args.Length)
+                    {
+                        throw new Exception($"Количество аргументов не соответствует. Ожидалось: {parcedArgs.Count}, получено: {args.Length}");
+                    }
+
+                    for (int ind = 0; ind < parcedArgs.Count; ind++)
+                    {
+                        projectCommand.Parameters.AddWithValue(parcedArgs[ind], args[ind] ?? DBNull.Value);
+                    }
+                }
+
+                using var reader = projectCommand.ExecuteReader();
+
+                // Читаем результат
+                while (reader.Read())
+                {
+                    var row = new List<object>();
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        row.Add(reader.IsDBNull(i) ? null : reader.GetValue(i));
+                    }
+                    result.Add(row);
+                }
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine($"Ошибка выполнения запроса: {err.Message}");
+                Console.WriteLine($" Запрос: {command}");
+                throw;
+            }
+
+            return result;
+        }
+
+        public int ExecuteNonQuery(string command, params object[] args)
+        {
+            try
+            {
+                using var cmd = new NpgsqlCommand(command, _connection);
+
+                if (args.Length != 0)
+                {
+                    List<string> parcedArgs = Parcer.ParceArgs(command);
+
+                    if (parcedArgs.Count != args.Length)
+                    {
+                        throw new Exception($"Количество аргументов не соответствует. Ожидалось: {parcedArgs.Count}, получено: {args.Length}");
+                    }
+
+                    for (int ind = 0; ind < parcedArgs.Count; ind++)
+                    {
+                        cmd.Parameters.AddWithValue(parcedArgs[ind], args[ind] ?? DBNull.Value);
+                    }
+                }
+
+                return cmd.ExecuteNonQuery();
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine($"Ошибка выполнения команды: {err.Message}");
+                throw;
+            }
+        }
+
         public void Dispose()
         {
             _connection?.Close();
             _connection?.Dispose();
         }
-    }
-
-    public class Booking
-    {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public string ClientName { get; set; }
-        public string PhoneNumber { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
-        public string Comment { get; set; }
-        public int AssignedTableId { get; set; }
     }
 }

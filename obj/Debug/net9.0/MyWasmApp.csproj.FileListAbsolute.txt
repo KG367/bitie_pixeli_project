@@ -2164,10 +2164,10 @@
 /home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/Npgsql.dll
 /home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/webcil/Npgsql.wasm
 /home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/oi9v7yivnz-t19fbx9wjg.gz
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.cu60jugcfn.pdb
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.qllafcdipk.wasm
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.cu60jugcfn.pdb.gz
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.qllafcdipk.wasm.gz
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-qllafcdipk.gz
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-cu60jugcfn.gz
-/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-tnv82ukb4y.gz
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.o4cdt355t7.pdb
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wjjxrzro9p.wasm
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.o4cdt355t7.pdb.gz
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/bin/Debug/net9.0/wwwroot/_framework/MyWasmApp.wjjxrzro9p.wasm.gz
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/t2qwrl8i0e-wjjxrzro9p.gz
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/j4vc67eb32-o4cdt355t7.gz
+/home/undeadguy/ПОЛИГОН/C#/bitie_pixeli_project/obj/Debug/net9.0/compressed/asa5tjt0zs-evekhugszj.gz

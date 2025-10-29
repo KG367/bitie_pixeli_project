@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyWasmApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b989265d0ae93bbaecc604da3cfd8cc286019f75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8cf196b703ea43656275f2b6332243478da6b05")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyWasmApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyWasmApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
