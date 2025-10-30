@@ -1,197 +1,65 @@
+using System.ComponentModel;
 using System.Numerics;
 using Service;
+using Npgsql;
 
-namespace BookingSysem // мой сервис с реализацией системы брони. Пока что сырой и не обкатанный, но компилируется!
+namespace BookingSystem
 {
-
-
     public class BookingService
     {
-        public Dictionary<int, List<Booking>> bookings;
 
-        public bool AddNewTable(int tableId)
+        private NpgsqlConnection connection;
+
+        public bool TableIsAvalible(int tableId, in DateTime startTime, in DateTime endTime)
         {
-            if (!bookings.ContainsKey(tableId))
+            try
             {
-                bookings.Add(tableId, new List<Booking>());
-                return true;
+                var sql = new NpgsqlCommand("SELECT NOT EXISTS ( SELECT 1 FROM bookings WHERE @table_id = ANY(assigned_table_id) AND NOT (end_time <= @start_time OR start_time >= @end_time))", this.connection);
+                sql.Parameters.AddWithValue("@table_id", tableId);
+                sql.Parameters.AddWithValue("@start_time", startTime);
+                sql.Parameters.AddWithValue("@end_time", endTime);
+
+                return (bool)sql.ExecuteScalar();
             }
-            return false;
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+                throw;
+            }
         }
-
-        public bool GetEmptyBookPosition(in List<Booking> bookings, in DateTime start, in DateTime end, out int index)
-        {
-            index = -1;
-    
-            if (bookings == null || bookings.Count == 0)
-            {
-                index = 0;
-                return true;
-            }
-    
-            if (end <= bookings[0].StartTime)
-            {
-                index = 0;
-                return true;
-            }
-    
-            if (start >= bookings[^1].EndTime)  
-            {
-                index = bookings.Count;
-                return true;
-            }
-    
-            int left = 0;
-            int right = bookings.Count - 1;
-    
-            while (left <= right)
-            {
-                int mid = left + (right - left) / 2;  
         
-                Booking current = bookings[mid];
-                if (current.EndTime <= start)
-                {
-                    if (mid + 1 < bookings.Count)
-                    {
-                        Booking next = bookings[mid + 1];
-                        if (next.StartTime >= end)
-                        {
-                            index = mid + 1;
-                            return true;
-                        }
-                        else
-                        {
-                            left = mid + 1;
-                        }   
-                    }
-                    else
-                    {
-                        index = mid + 1;
-                        return true;
-                    }
-                }
-                else
-                {
-                    right = mid - 1;
-                }   
-            }
-    
-            return false;
-        }
-
-        public bool BookTable(int tableId, in DateTime startTime, in DateTime endTime, int clientId, string clientName, string phoneNumber, string comment)
+        
+        public bool TryBook(in Book newBook, out int? index) // TODO: Оптимизировать это через SQL...
         {
-            List<Booking> tableBookings = bookings[tableId];
-            if (tableBookings.Count == 0)
+
+            foreach (var tableId in newBook.AssignedTableId)
             {
-                tableBookings.Add(new Booking(clientId, clientName, phoneNumber, startTime, endTime, comment, tableId));
-                return true;
-            }
-            else
-            {
-                int targetIndex = -1;
-                if (!(this.GetEmptyBookPosition(in tableBookings, in startTime, in endTime, out targetIndex)))
+                if (!this.TableIsAvalible(tableId, newBook.StartTime, newBook.EndTime))
                 {
+                    index = null;
                     return false;
                 }
-                else
-                {
-                    tableBookings.Insert(targetIndex, new Booking(clientId, clientName, phoneNumber, startTime, endTime, comment, tableId));
-                }
             }
+            
+            var sql = new NpgsqlCommand(@"INSERT INTO bookings (user_id, client_name, phone_number, start_time, end_time, comment, assigned_table_id) VALUES (@user_id, @client_name, @phone_number, @start_time, @end_time, @comment, @assigned_table_id) RETURNING id", this.connection);
+
+            sql.Parameters.AddWithValue("@user_id", newBook.UserId);
+            sql.Parameters.AddWithValue("@client_name", newBook.ClientName);
+            sql.Parameters.AddWithValue("@phone_number", newBook.PhoneNumber);
+            sql.Parameters.AddWithValue("@start_time", newBook.StartTime);
+            sql.Parameters.AddWithValue("@end_time", newBook.EndTime);
+            sql.Parameters.AddWithValue("@comment", newBook.Comment);
+            sql.Parameters.AddWithValue("@assigned_table_id", newBook.AssignedTableId.ToArray());
+
+            index = (int)sql.ExecuteScalar();
             return true;
+
         }
+        
 
-        public bool BookTable(in Booking book)
+        public BookingService(NpgsqlConnection connection)
         {
-            List<Booking> tableBookings = bookings[book.AssignedTableId];
-            if (tableBookings.Count == 0)
-            {
-                tableBookings.Add(book);
-                return true;
-            }
-            else
-            {
-                int targetIndex = -1;
-                if (!(this.GetEmptyBookPosition(in tableBookings,  book.StartTime, book.EndTime, out targetIndex)))
-                {
-                    return false;
-                }
-                else
-                {
-                    tableBookings.Insert(targetIndex, book);
-                }
-            }
-            return true;
-        }
-
-        public bool CancelBooking(in Booking booking)
-        {
-            List<Booking> tableBookings = this.bookings[booking.AssignedTableId];
-            return tableBookings.Remove(booking);
-        }
-
-        public bool CancelBooking(int tableId, in DateTime time, bool start)
-        {
-            List<Booking> tableBookings = this.bookings[tableId];
-
-            if (start)
-            {
-                for (int i = 0; i < tableBookings.Count; i++)
-                {
-                    if (tableBookings[i].StartTime == time)
-                    {
-                        tableBookings.RemoveAt(i);
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else
-            {
-                for (int i = 0; i < tableBookings.Count; i++)
-                {
-                    if (tableBookings[i].EndTime == time)
-                    {
-                        tableBookings.RemoveAt(i);
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-
-        public bool TryGetBooking(int tableId, in DateTime time, bool start, out Booking? outB)
-        {
-            List<Booking> bookings = this.bookings[tableId];
-
-
-
-            if (start)
-            {
-                foreach (Booking booking in bookings)
-                {
-                    if (booking.StartTime == time)
-                    {
-                        outB = booking;
-                        return true;
-                    }
-                }
-            }
-            else
-            {
-                foreach (Booking booking in bookings)
-                {
-                    if (booking.EndTime == time)
-                    {
-                        outB = booking;
-                        return true;
-                    }
-                }
-            }
-
-            outB = null;
-            return false;
+            this.connection = connection;
         }
     }
 }

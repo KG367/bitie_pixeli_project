@@ -9,10 +9,27 @@ using System.Data;
 namespace Service //базовая прослойка JS плюс БД
 {
 
+    public interface CheckingConnection //интерфейс для проверки открытости подключения к БД
+    {
+        void Check();
+    }
+
+    public static class ConnectionExtension
+    {
+        public static void Check(this NpgsqlConnection connection) //реализация интерфейса для Npgsql соединения
+        {
+            if (connection.State != ConnectionState.Open) //перестраховка, что канал жив, в противном случае "перезагружаем"
+            {
+                    connection.Close();
+                    connection.Open();
+            }   
+        }
+    }
+
 
     public class Parcer
     {
-        public static List<string> ParceArgs(string str)
+        public static List<string> ParceArgs(string str) //парсит аргументы (необходим в силу специфики Npgsql) для быстрых SQL-запросов. Перед аргументами в запросе должен быть @!
         {
             List<string> args = new List<string>();
             string buff = "";
@@ -82,7 +99,7 @@ namespace Service //базовая прослойка JS плюс БД
         PhoneNumber,
         Comment,
     }
-    public class Booking
+    public class Book
     {
         public int Id { get; set; }
         public int UserId { get; set; }
@@ -91,10 +108,10 @@ namespace Service //базовая прослойка JS плюс БД
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public string Comment { get; set; }
-        public int AssignedTableId { get; set; }
+        public List<int> AssignedTableId { get; set; }
 
 
-        public Booking(int userId, string clientName, string phoneNumber, DateTime startTime, DateTime endTime, string comment, int assignedTableId)
+        public Book(int userId, string clientName, string phoneNumber, DateTime startTime, DateTime endTime, string comment, in List<int> assignedTableId)
         {
             UserId = userId;
             ClientName = clientName;
@@ -190,7 +207,7 @@ namespace Service //базовая прослойка JS плюс БД
 
     public class PostgresService : IDisposable
     {
-        private readonly NpgsqlConnection _connection;
+        private static NpgsqlConnection _connection;
 
         public PostgresService()
         {
@@ -221,7 +238,7 @@ namespace Service //базовая прослойка JS плюс БД
             }
         }
 
-        public List<List<object>> ExecSQL(string command, params object[] args)
+        public static List<List<object>> ExecSQL(string command, params object[] args) //это функция написана по большому счету для быстрых тестов KG367. В продакшне не использовать, т.к. objectы череваты ошибками в рантайме и множестввенными оверхедами
         {
             List<List<object>> result = new List<List<object>>();
 
@@ -267,7 +284,7 @@ namespace Service //базовая прослойка JS плюс БД
             return result;
         }
 
-        public int ExecuteNonQuery(string command, params object[] args)
+        public static int ExecuteSQLNonQuery(string command, params object[] args) //Для SQL, не предполагающего возврат чего-то
         {
             try
             {
@@ -296,6 +313,13 @@ namespace Service //базовая прослойка JS плюс БД
                 throw;
             }
         }
+
+        public static NpgsqlConnection GetConnection()
+        {
+
+            _connection.Check();
+            return _connection;
+        }      
 
         public void Dispose()
         {
