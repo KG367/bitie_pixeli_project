@@ -1,6 +1,6 @@
 ﻿@page "/"
 @using Service
-@inject CommonService Common
+@inject JSService JSServ
 @inject IJSRuntime JS
 
 
@@ -11,4 +11,4 @@
 Welcome to your new app.
 
 
-<p><button @onclick="() => Common.AlertJS(Common.loudMessage)">ПРИМЕР</button></p> 
+<p><button @onclick="() => JSServ.AlertJS(JSService.loudMessage)">ПРИМЕР</button></p> 
