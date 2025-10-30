@@ -1,5 +1,8 @@
 bin/
 obj/
+*.sln
+
+.vscode/
 
 # for mac users
 .DS_Store?
