@@ -164,16 +164,16 @@ namespace Service //базовая прослойка JS плюс БД
         public decimal TotalPrice { get; set; }
     }
 
-    public class Dishes
+    public class Dish
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Ingredients { get; set; }
-        public string Weight { get; set; }
-        public List<int> Categories { get; set; }
-        public List<int> Tags { get; set; }
-        public int CookingTime { get; set; }
-        public decimal Cost { get; set; }
+        public int Id { get; private set; }
+        public string Name { get; private set; }
+        public string Ingredients { get; private set; }
+        public string Weight { get; private set; }
+        public decimal Price { get; private set; }
+        public List<string> Categories { get; private set; }
+        public int CookingTime { get; private set; }
+        public List<string> Tags { get; private set; }
     }
 
     public class Categories
@@ -260,7 +260,7 @@ namespace Service //базовая прослойка JS плюс БД
             catch (Exception err)
             {
                 Console.WriteLine($"Ошибка выполнения запроса: {err.Message}");
-                Console.WriteLine($" Запрос: {command}");
+                Console.WriteLine($"Запрос: {command}");
                 throw;
             }
 

@@ -4,38 +4,56 @@ namespace Dish
 {
     public enum DishCategory
     {
-        Drinks, Salads,
-        ColdAppetizers, HotAppetizers, Soups, HotDishes, Desserts
+        Drinks, Salads, ColdAppetizers, HotAppetizers, Soups, HotDishes, Desserts
     };
+
+    public enum DishField
+    {
+        Id, Name, Ingredients, Weight, Price, Categories, CookingTime, Tags
+    }
 
 
     public class Dish
     {
+        /*
+        Id [int] - ид блюда.
+        Name [string] - имя блюда.
+        Ingredients [string] - состав блюда. Делать списком не вижу смысла, т.к если и менять, то всё сразу
+        Weight [text] - вес блюда. Блюда бывают и граммовые и килограммовые. Ладно, это сова на глобус, оно такое какое оно есть
+        Price [decimal] - цена блюда. С деньгами надо быть осторожными, так что Decimal
+        Categories [List<string>] - Категории блюда. Есть функции по добавлению/удалению категорий. По идее в бд хранится как массив целых-индексов, в обёртке конвертируется в массив строк. (TODO: по тз тип - перечисление, уточнить)
+        CookingTime [int] - время приготовления, в каких-то (TODO: Уточнить) единицах измерения.
+        Tags [List<string>] - доп. теги, напр. веганское, острое. В бд хранится опять же как массив индексов.
+        */
         public int Id { get; private set; }
         public string Name { get; private set; }
         public string Ingredients { get; private set; }
         public string Weight { get; private set; }
-        public float Price { get; private set; }
-        public DishCategory Category { get; private set; }
+        public decimal Price { get; private set; }
+        public List<string> Categories { get; private set; }
         public int CookingTime { get; private set; }
         public List<string> Tags { get; private set; }
 
-        public Dish(int id, string name, string ingredients, string weight, float price, DishCategory category, int cookingTime, List<string> tags)
+        public Dish(int id, string name, string ingredients, string weight, decimal price, List<string> category, int cookingTime, List<string> tags)
         {
             Id = id;
             Name = name;
             Ingredients = ingredients;
             Weight = weight;
             Price = price;
-            Category = category;
+            Categories = category;
             CookingTime = cookingTime;
             Tags = tags;
         }
 
 
+        // Функция-заглушка, обозначающая транзакцию в бд
+        private static void db() {}
+
+
         // Статический метод-фабрика
         public static Dish CreateDish(int id, string name, string composition, string weight,
-                                        float price, DishCategory category, int cookingTime,
+                                        decimal price, List<string> category, int cookingTime,
                                         List<string> tags)
         {
             return new Dish(id, name, composition, weight, price, category, cookingTime, tags);
@@ -43,10 +61,12 @@ namespace Dish
 
 
         // Редактирование блюда
-        public void EditDish(string name = null, string ingredients = null, string weight = null,
-                                float? price = null, DishCategory? category = null,
-                                int? cookingTime = null, List<string> tags = null)
+        public bool TryModify(string? name = null, string? ingredients = null, string? weight = null,
+                                decimal? price = null, List<string>? categories = null,
+                                int? cookingTime = null, List<string>? tags = null)
         {
+            //Return true if succesfully modified
+            // TODO желательно добавить флаги редактирования, чтобы обновлять в бд только те поля что отредактированы здесь
             if (!string.IsNullOrEmpty(name))
                 Name = name;
 
@@ -59,14 +79,19 @@ namespace Dish
             if (price.HasValue)
                 Price = price.Value;
 
-            if (category.HasValue)
-                Category = category.Value;
+            // TODO Добавить проверку, чтобы можно было добавить только существующие категории
+            if (categories != null)
+                Categories = categories;
 
             if (cookingTime.HasValue)
                 CookingTime = cookingTime.Value;
 
+            // TODO аналогично categories
             if (tags != null)
                 Tags = tags;
+
+            db();
+            return true;
         }
 
 
@@ -78,7 +103,7 @@ namespace Dish
             Console.WriteLine($"Состав: {Ingredients}");
             Console.WriteLine($"Вес: {Weight}");
             Console.WriteLine($"Цена: {Price:F2} руб.");
-            Console.WriteLine($"Категория: {Category}");
+            Console.WriteLine($"Категории: {string.Join(", ", Categories)}");
             Console.WriteLine($"Время готовки: {CookingTime} мин.");
             Console.WriteLine($"Типы: {string.Join(", ", Tags)}");
             Console.WriteLine("===========================");
@@ -91,7 +116,7 @@ namespace Dish
             Ingredients = string.Empty;
             Weight = "0/0/0";
             Price = 0;
-            Category = DishCategory.HotAppetizers;
+            Categories.Clear();
             CookingTime = 0;
             Tags.Clear();
 
@@ -100,19 +125,55 @@ namespace Dish
 
 
         public override string ToString() =>
-            $"Блюдо {Id}: {Name} - {Price:F2} руб. ({Category})\nСостав: {Ingredients}\nВес: {Weight}";
+            $"Блюдо {Id}: {Name} - {Price:F2} руб.\nСостав: {Ingredients}\nВес: {Weight}";
 
-        public void AddType(string type)
+        public bool AddType(params string[] newTags)
         {
-            if (!string.IsNullOrEmpty(type) && !Tags.Contains(type))
+            // Возвращает 0 если всё ок, иначе возвращает номер (не индекс) неверного аргумента
+            foreach (string tag in newTags)
             {
-                Tags.Add(type);
+                db(); // Проверка на существование в базе такого типа.
+                if (!string.IsNullOrEmpty(tag) && !Tags.Contains(tag))
+                {
+                    Tags.Add(tag);
+                }
             }
+            db(); // Закрепление
+            return 0;
         }
 
-        public void RemoveType(string type)
+        public bool RemoveType(params string[] oldTags)
         {
-            Tags.Remove(type);
+            foreach (string tag in oldTags)
+            {
+                Tags.Remove(tag);
+            }
+            db();
+            return 0;
+        }
+
+        public bool AddCategory(params string[] newCategories)
+        {
+            foreach (string category in newCategories)
+            {
+                db();
+                if (!string.IsNullOrEmpty(category) && !Categories.Contains(category))
+                {
+                    Categories.Add(category);
+                }
+            }
+            db();
+            return 0;
+        }
+
+        public bool RemoveCategory(string oldCategories)
+        {
+            foreach (string category in oldCategories)
+            {
+                Categories.Remove(category);
+            }
+            db();
+            return 0;
         }
     }
 
@@ -136,7 +197,7 @@ namespace Dish
 
     //         dish1.DisplayInfo();
 
-    //         dish1.EditDish(price: 480.00f, cookingTime: 12);
+    //         dish1.TryModify(price: 480.00f, cookingTime: 12);
     //         dish1.AddType("Веганское");
 
     //         dish1.DisplayInfo();

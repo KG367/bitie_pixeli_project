@@ -34,7 +34,7 @@ namespace BookingSysem // мой сервис с реализацией сист
                 index = 0;
                 return true;
             }
-    
+
             if (start >= bookings[^1].EndTime)  
             {
                 index = bookings.Count;
