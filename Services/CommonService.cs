@@ -164,18 +164,6 @@ namespace Service //базовая прослойка JS плюс БД
         public decimal TotalPrice { get; set; }
     }
 
-    public class Dish
-    {
-        public int Id { get; private set; }
-        public string Name { get; private set; }
-        public string Ingredients { get; private set; }
-        public string Weight { get; private set; }
-        public decimal Price { get; private set; }
-        public List<string> Categories { get; private set; }
-        public int CookingTime { get; private set; }
-        public List<string> Tags { get; private set; }
-    }
-
     public class Categories
     {
         public int Id { get; set; }

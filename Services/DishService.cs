@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Dish
+namespace DishService
 {
     public enum DishCategory
     {
@@ -53,10 +53,10 @@ namespace Dish
 
         // Статический метод-фабрика
         public static Dish CreateDish(int id, string name, string composition, string weight,
-                                        decimal price, List<string> category, int cookingTime,
+                                        decimal price, List<string> categories, int cookingTime,
                                         List<string> tags)
         {
-            return new Dish(id, name, composition, weight, price, category, cookingTime, tags);
+            return new Dish(id, name, composition, weight, price, categories, cookingTime, tags);
         }
 
 
@@ -127,7 +127,8 @@ namespace Dish
         public override string ToString() =>
             $"Блюдо {Id}: {Name} - {Price:F2} руб.\nСостав: {Ingredients}\nВес: {Weight}";
 
-        public bool AddType(params string[] newTags)
+
+        public bool AddTags(params string[] newTags)
         {
             // Возвращает 0 если всё ок, иначе возвращает номер (не индекс) неверного аргумента
             foreach (string tag in newTags)
@@ -139,20 +140,22 @@ namespace Dish
                 }
             }
             db(); // Закрепление
-            return 0;
+            return false;
         }
 
-        public bool RemoveType(params string[] oldTags)
+
+        public bool RemoveTags(params string[] oldTags)
         {
             foreach (string tag in oldTags)
             {
                 Tags.Remove(tag);
             }
             db();
-            return 0;
+            return false;
         }
 
-        public bool AddCategory(params string[] newCategories)
+
+        public bool AddCategories(params string[] newCategories)
         {
             foreach (string category in newCategories)
             {
@@ -163,17 +166,18 @@ namespace Dish
                 }
             }
             db();
-            return 0;
+            return false;
         }
 
-        public bool RemoveCategory(string oldCategories)
+
+        public bool RemoveCategories(params string[] oldCategories)
         {
             foreach (string category in oldCategories)
             {
                 Categories.Remove(category);
             }
             db();
-            return 0;
+            return false;
         }
     }
 
