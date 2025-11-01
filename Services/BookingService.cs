@@ -55,11 +55,5 @@ namespace BookingSystem
             return true;
 
         }
-        
-
-        public BookingService(NpgsqlConnection connection)
-        {
-            this.connection = connection;
-        }
     }
 }

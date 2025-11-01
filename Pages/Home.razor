@@ -1,16 +1,50 @@
 ﻿@page "/"
 @using Service
-@using BookingSystem
-@inject JSService JSServ
-@inject IJSRuntime JS
-@inject BookingService B
 
+@inject ApiClient Api
 
-<PageTitle>Home</PageTitle>
+<h1>SQL Test</h1>
 
-<h1>Hello, world!</h1>
+<button @onclick="RunTest">Run Test</button>
 
-Welcome to your new app.
+<pre>@output</pre>
 
+@code {
+    private string output = "";
 
-<p><button @onclick="() => JSServ.AlertJS(JSService.loudMessage)">ПРИМЕР</button></p> 
+    private async Task RunTest()
+    {
+        try
+        {
+            // Войти и получить токен
+            var tokenResp = await Api.LoginAsync("admin", "admin123");
+            if (tokenResp == null)
+            {
+                output = "Login failed.";
+                return;
+            }
+
+            // Выполнить SQL через API
+            var sqlResp = await Api.ExecuteSqlAsync(
+                tokenResp.Access_Token,
+                "SELECT username, email FROM users"
+            );
+
+            if (sqlResp?.Data != null)
+            {
+                output = System.Text.Json.JsonSerializer.Serialize(
+                    sqlResp.Data,
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true }
+                );
+            }
+            else
+            {
+                output = "No data returned.";
+            }
+        }
+        catch (Exception ex)
+        {
+            output = $"Error: {ex.Message}";
+        }
+    }
+}
