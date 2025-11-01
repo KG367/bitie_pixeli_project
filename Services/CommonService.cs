@@ -1,73 +1,15 @@
 // здесь будут лежать общие методы, их можно вызвать ВЕЗДЕ, как обычный файл .js
 using Microsoft.JSInterop;
-using System.Data.Common;
+using System;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Text;
 using System.Threading.Tasks;
-using Npgsql;
-using System.Data;
+using System.Text.Json;
 
 
 namespace Service //базовая прослойка JS плюс БД
 {
-
-    public interface CheckingConnection //интерфейс для проверки открытости подключения к БД
-    {
-        void Check();
-    }
-
-    public static class ConnectionExtension
-    {
-        public static void Check(this NpgsqlConnection connection) //реализация интерфейса для Npgsql соединения
-        {
-            if (connection.State != ConnectionState.Open) //перестраховка, что канал жив, в противном случае "перезагружаем"
-            {
-                    connection.Close();
-                    connection.Open();
-            }   
-        }
-    }
-
-
-    public class Parcer
-    {
-        public static List<string> ParceArgs(string str) //парсит аргументы (необходим в силу специфики Npgsql) для быстрых SQL-запросов. Перед аргументами в запросе должен быть @!
-        {
-            List<string> args = new List<string>();
-            string buff = "";
-            bool isArg = false;
-
-            foreach (char c in str)
-            {
-                if (isArg)
-                {
-                    if (c == ' ')
-                    {
-                        args.Add(buff);
-                        buff = "@";
-                        isArg = false;
-                    }
-                    else
-                    {
-                        buff += c;
-                    }
-                }
-                else
-                {
-                    if (c == '@')
-                    {
-                        isArg = true;
-                        buff = "@";
-                    }
-                }
-            }
-
-            if (buff != "@" && buff != "")
-            {
-                args.Add(buff);
-            }
-
-            return args;
-        }
-    }
     public class JSService
     {
 
@@ -110,6 +52,14 @@ namespace Service //базовая прослойка JS плюс БД
         public string Comment { get; set; }
         public List<int> AssignedTableId { get; set; }
 
+
+        public Book() 
+        {
+            ClientName = string.Empty;
+            PhoneNumber = string.Empty;
+            Comment = string.Empty;
+            AssignedTableId = new List<int>();
+        }
 
         public Book(int userId, string clientName, string phoneNumber, DateTime startTime, DateTime endTime, string comment, in List<int> assignedTableId)
         {
@@ -192,127 +142,99 @@ namespace Service //базовая прослойка JS плюс БД
         public int Id { get; set; }
         public string Name { get; set; }
     }
-
-    public class PostgresService : IDisposable
+    
+    public class TokenResponse
     {
-        private static NpgsqlConnection _connection;
+        public string Access_Token { get; set; } = string.Empty;
+        public string Token_Type { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+    }
 
-        public PostgresService()
+    public class SqlResponse
+    {
+        public List<Dictionary<string, object>> Data { get; set; } = new();
+        public int Row_Count { get; set; }
+    }
+
+
+    public class ApiClient
+    {
+        private readonly HttpClient _http;
+        private readonly string _baseUrl;
+
+        // Конструктор — задаём IP или базовый адрес API
+        public ApiClient(HttpClient http)
         {
-            string connectionString = @"
-            Host=84.19.3.114;
-            Port=5432;
-            Database=pks_project;
-            Username=project;
-            Password=C#_forever!;
-            Pooling=true;                           
-            Minimum Pool Size=0;                    
-            Maximum Pool Size=20;                   
-            Connection Idle Lifetime=300;           
-            Timeout=30;                             
-            Command Timeout=300;                    
-            Encoding=UTF8;                          
-            Search Path=public;";
+            _http = http;
+            _baseUrl = "http://84.19.3.114:1624";
+            ; 
+        }
+        
+        public async Task<T?> GetAsync<T>(string endpoint)
+        {
+            // Собираем полный адрес запроса
+            var url = _baseUrl + endpoint;
 
-            try
-            {
-                _connection = new NpgsqlConnection(connectionString);
-                _connection.Open();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка подключения к БД: {ex.Message}");
-                throw;
-            }
+            // Отправляем GET-запрос
+            var response = await _http.GetAsync(url);
+
+            // Если не 200 OK — выбрасываем исключение
+            response.EnsureSuccessStatusCode();
+
+            // Читаем JSON и превращаем в объект T
+            return await response.Content.ReadFromJsonAsync<T>();
+        }
+        
+        public async Task<TResponse?> PostAsync<TRequest, TResponse>(string endpoint, TRequest body)
+        {
+            var url = _baseUrl + endpoint;
+
+            // Преобразуем объект в JSON-строку
+            var json = JsonSerializer.Serialize(body);
+
+            // Упаковываем в StringContent с заголовком application/json
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _http.PostAsync(url, content);
+            response.EnsureSuccessStatusCode();
+
+            // Читаем ответ (JSON → объект)
+            return await response.Content.ReadFromJsonAsync<TResponse>();
         }
 
-        public static List<List<object>> ExecSQL(string command, params object[] args) //это функция написана по большому счету для быстрых тестов KG367. В продакшне не использовать, т.к. objectы череваты ошибками в рантайме и множестввенными оверхедами
+       
+        public async Task<TResponse?> PutAsync<TRequest, TResponse>(string endpoint, TRequest body)
         {
-            List<List<object>> result = new List<List<object>>();
+            var url = _baseUrl + endpoint;
 
-            try
-            {
-                using var projectCommand = new NpgsqlCommand(command, _connection);
+            var json = JsonSerializer.Serialize(body);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                if (args.Length != 0)
-                {
-                    List<string> parcedArgs = Parcer.ParceArgs(command); 
+            var response = await _http.PutAsync(url, content);
+            response.EnsureSuccessStatusCode();
 
-                    if (parcedArgs.Count != args.Length)
-                    {
-                        throw new Exception($"Количество аргументов не соответствует. Ожидалось: {parcedArgs.Count}, получено: {args.Length}");
-                    }
+            return await response.Content.ReadFromJsonAsync<TResponse>();
+        }
+        
+        public async Task<bool> DeleteAsync(string endpoint)
+        {
+            var url = _baseUrl + endpoint;
 
-                    for (int ind = 0; ind < parcedArgs.Count; ind++)
-                    {
-                        projectCommand.Parameters.AddWithValue(parcedArgs[ind], args[ind] ?? DBNull.Value);
-                    }
-                }
-
-                using var reader = projectCommand.ExecuteReader();
-
-                // Читаем результат
-                while (reader.Read())
-                {
-                    var row = new List<object>();
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        row.Add(reader.IsDBNull(i) ? null : reader.GetValue(i));
-                    }
-                    result.Add(row);
-                }
-            }
-            catch (Exception err)
-            {
-                Console.WriteLine($"Ошибка выполнения запроса: {err.Message}");
-                Console.WriteLine($"Запрос: {command}");
-                throw;
-            }
-
-            return result;
+            var response = await _http.DeleteAsync(url);
+            return response.IsSuccessStatusCode;
+        }
+        
+        public async Task<TokenResponse?> LoginAsync(string username, string password)
+        {
+            var body = new { username, password };
+            return await PostAsync<object, TokenResponse>("/login", body);
         }
 
-        public static int ExecuteSQLNonQuery(string command, params object[] args) //Для SQL, не предполагающего возврат чего-то
+        public async Task<SqlResponse?> ExecuteSqlAsync(string token, string sql)
         {
-            try
-            {
-                using var cmd = new NpgsqlCommand(command, _connection);
-
-                if (args.Length != 0)
-                {
-                    List<string> parcedArgs = Parcer.ParceArgs(command);
-
-                    if (parcedArgs.Count != args.Length)
-                    {
-                        throw new Exception($"Количество аргументов не соответствует. Ожидалось: {parcedArgs.Count}, получено: {args.Length}");
-                    }
-
-                    for (int ind = 0; ind < parcedArgs.Count; ind++)
-                    {
-                        cmd.Parameters.AddWithValue(parcedArgs[ind], args[ind] ?? DBNull.Value);
-                    }
-                }
-
-                return cmd.ExecuteNonQuery();
-            }
-            catch (Exception err)
-            {
-                Console.WriteLine($"Ошибка выполнения команды: {err.Message}");
-                throw;
-            }
+            var body = new { token, sql };
+            return await PostAsync<object, SqlResponse>("/exec_sql_dict", body);
         }
 
-        public static NpgsqlConnection GetConnection()
-        {
-
-            _connection.Check();
-            return _connection;
-        }      
-
-        public void Dispose()
-        {
-            _connection?.Close();
-            _connection?.Dispose();
-        }
     }
 }
